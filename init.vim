@@ -19,7 +19,7 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
 " Tree
@@ -36,7 +36,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " autocomplete
 Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'mattn/emmet-vim'
 " test
 Plug 'janko-m/vim-test'
 
