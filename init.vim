@@ -98,7 +98,7 @@ set splitbelow
 
 
 let mapleader = " "
-
+nnoremap <Leader>w :w<CR>
 
 " move line or visually selected block - alt+j/k
 inoremap <A-j> <Esc>:m .+1<CR>==gi
@@ -124,7 +124,17 @@ vnoremap <A-k> :m '<-2<CR>gv=gv" move split panes to left/bottom/top/right
 
 
 " plugins config
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 "  nerdtree
 nnoremap <leader><F2> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
